@@ -1,0 +1,49 @@
+#quote-box {
+  height: -moz-max-content;
+  height: max-content;
+  width: 600px;
+  padding: 30px;
+  display: grid;
+  align-items: center;
+  border-radius: 5px;
+  background-color: white;
+}
+#quote-box blockquote {
+  transition: color 2s ease;
+  font-size: 1.75rem;
+}
+#quote-box blockquote cite {
+  font-size: 1rem;
+  margin-top: 30px;
+  display: block;
+  text-align: right;
+}
+#quote-box blockquote p::before {
+  font-size: 2.5rem;
+  content: '"';
+  margin-right: 10px;
+}
+#quote-box #button-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding: 20px;
+}
+#quote-box img {
+  width: 60px;
+  height: 60px;
+}
+#quote-box button {
+  height: 55px;
+  font-family: Raleway, sans-serif;
+  border-color: none;
+  transition: background-Color 2s ease;
+}
+
+@media only screen and (max-width: 768px) {
+  #quote-box {
+    width: 400px;
+  }
+}/*# sourceMappingURL=App.css.map */

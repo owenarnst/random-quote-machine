@@ -1,0 +1,48 @@
+#quote-box {
+    height: max-content;
+    width: 600px;
+    padding: 30px;
+    display: grid;
+    align-items: center;
+    border-radius: 5px;
+    background-color: white;
+    blockquote {
+        transition: color 2s ease;
+        font-size: 1.75rem;
+        cite {
+            font-size: 1rem;
+            margin-top: 30px;
+            display: block;
+            text-align: right;
+        }
+        p::before {
+            font-size: 2.5rem;
+            content: '"';
+            margin-right: 10px;
+        }
+    }
+    #button-row {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 10px;
+        padding: 20px;
+    }
+    img {
+        width: 60px;
+        height: 60px;
+    }
+    button {
+        height: 55px;
+        font-family: Raleway, sans-serif;
+        border-color: none;
+        transition: background-Color 2s ease;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #quote-box {
+        width: 400px;
+    }
+}
+ 
